@@ -1,0 +1,2 @@
+INSERT INTO `dede_search_keywords` VALUES('1','案例','案例','2','0','1452583126','0','0');
+INSERT INTO `dede_search_keywords` VALUES('2','设备','设备','2','8','1452612793','0','0');

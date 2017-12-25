@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Author" content="xunmoban.com" />
+<title>{dede:field.title/}-{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="" />
+<meta name="description" content=""/>
+<script type="text/javascript" src="/skin/common/js/urlredirect.js"></script>
+<LINK href="/skin/css/master.css" rel=stylesheet>
+<LINK href="/skin/css/skins/default/jbox.css" rel=stylesheet>
+<script language="JavaScript" type="text/javascript" src="/skin/js/jquery.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/common/js/functions.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/common/js/validForm/FormValid.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/common/js/jbox/jquery.jBox-2.3.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/js/nav.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/js/banner.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/js/search.js"></script>
+<!--[if IE 6]>
+<script type="text/javascript" src="/skin/js/png.js"></script>
+<script>DD_belatedPNG.fix('div,img,span,li,a,a:hover,dd,p,input,select')</script>
+<![endif]-->
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<div class="sub-banner-box">
+  <div class="sub-banner"> <img src="/skin/images/about.jpg" alt="3"/> </div>
+</div>
+<div class="sub-title">
+  <p class="title-border"></p>
+  <div class="title-name"> <span>CASE</span>
+    <p>{dede:field name='typename'/}</p>
+  </div>
+</div>
+<div class="sub-class-bg">
+  <div class="sub-class"> <span>|</span>{dede:channel row="10" type="son" col="1"} <a href="[field:typeurl/]" title="[field:typename/]">[field:typename/]</a><span>|</span> {/dede:channel} </div>
+</div>
+<div class="subpage">
+  <ul class="viedo">
+    {dede:list pagesize="6"}
+    <li> <a href="[field:arcurl/]" title="[field:title/]"> <img src="[field:picname/]" width="315" height="236" alt="[field:title/]"/> </a>
+      <p><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></p>
+    </li>
+    {/dede:list}
+  </ul>
+  <div class="pages">
+    <ul>
+      {dede:pagelist istitem="index,pre,next,end," listsize="5"/}
+    </ul>
+  </div>
+</div>
+{dede:include filename="footer.htm"/}
+</div>
+</div>
+</div>
+</body>
+</html>

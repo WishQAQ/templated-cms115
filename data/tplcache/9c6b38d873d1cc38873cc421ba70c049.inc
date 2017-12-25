@@ -1,0 +1,1 @@
+<a href="list.php?tid=[field:id/]"><img src="/m/public/images/fuwu1.jpg"></a>

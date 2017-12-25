@@ -1,0 +1,1 @@
+<a href="[field:typeurl/]" title="查看更多" class="imore">查看更多</a>

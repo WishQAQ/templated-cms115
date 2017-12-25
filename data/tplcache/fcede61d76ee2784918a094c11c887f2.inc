@@ -1,0 +1,1 @@
+<a href="list.php?tid=[field:id/]"> <strong class="iconfont1 iconfont1_ys la3">&#xe6d3;</strong> <span>[field:typename/]</span> </a>

@@ -1,0 +1,1 @@
+<p>{dede:field name='typename'/}</p>

@@ -1,0 +1,1 @@
+<a href="[field:typeurl/]" title="[field:typename/]" class="page1-img4"> <span>[field:typename/]</span></a>

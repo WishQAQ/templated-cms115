@@ -1,0 +1,1 @@
+<span>[field:typename/]</span> <em><img src="/m/public/images/31.gif"></em> <a href="list.php?tid=[field:id/]" title="">查看更多</a>

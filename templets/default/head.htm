@@ -1,0 +1,31 @@
+<div class="fixed"> <a href="javascript:;" title="二维码" class="codepic"></a> <a href="javascript:;" title="返回顶部" class="backup"></a>
+  <div> <img src="/skin/images/qrcode.png" alt="" class="code" > </div>
+</div>
+<div class="top-bg">
+  <div class="top"> <a href="/" title="" class="logo"> <img src="/skin/images/logo.png" alt=""/> </a>
+    <div class="top-tel"> <span>咨询电话</span>
+      <p>{dede:global.cfg_dianhua/}</p>
+    </div>
+    <ul class="nav">
+      <li class="nav1"><a {dede:field name=typeid runphp="yes"}(@me=="")? @me="   class='cur'  ":@me="";{/dede:field} href="/" title="网站首页">网站首页</a></li>
+      
+	  {dede:channel row="10" type="top" col="1" currentstyle="<li><a class='cur' href='~typelink~' ~rel~>~typename~</a></li>" }
+	  <li class="nav2"><a href="[field:typeurl/]" title="[field:typename/]">[field:typename/]</a></li>
+	  {/dede:channel}
+
+    </ul>
+    <img src="/skin/images/search_btn.jpg" class="search-btn" alt="搜索"/>
+    <div class="search">
+      <form name="formsearch" action="{dede:global.cfg_cmsurl/}/plus/search.php" method="post">
+        <input type="text" class="text pngFix"  name="q" id="kws" value="请输入搜索关键词"/>
+        <input type="submit" title="搜索" class="btn pngFix" value=""/>
+      </form>
+      <script src="/skin/js/jQselect.js" type=text/javascript></SCRIPT>
+      <script type=text/javascript>
+                jQuery(document).ready(function() {
+                    jQuery("#rid").selectbox();
+                });
+            </script>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Author" content="xunmoban.com" />
+<title>{dede:field.title/}-{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="" />
+<meta name="description" content=""/>
+<script type="text/javascript" src="/skin/common/js/urlredirect.js"></script>
+<LINK href="/skin/css/master.css" rel=stylesheet>
+<LINK href="/skin/css/skins/default/jbox.css" rel=stylesheet>
+<script language="JavaScript" type="text/javascript" src="/skin/js/jquery.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/common/js/functions.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/common/js/validForm/FormValid.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/common/js/jbox/jquery.jBox-2.3.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/js/nav.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/js/banner.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/js/search.js"></script>
+<!--[if IE 6]>
+<script type="text/javascript" src="/skin/js/png.js"></script>
+<script>DD_belatedPNG.fix('div,img,span,li,a,a:hover,dd,p,input,select')</script>
+<![endif]-->
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<div class="sub-banner-box">
+  <div class="sub-banner"> <img src="/skin/images/about.jpg" alt="3"/> </div>
+</div>
+<style type="text/css">
+#allmap {
+	width: 100%;
+	height: 300px;
+	overflow: hidden;
+	margin: 0;
+	font-family: "微软雅黑";
+	background: #CF3;
+	margin-top: 20px;
+}
+</style>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=hhKi5mVbjmdDD5rAWtGkCjuD"></script>
+<div class="sub-title">
+  <p class="title-border"></p>
+  <div class="title-name"> <span>contact</span>
+    <p>联系我们</p>
+  </div>
+</div>
+<div class="sub-class-bg">
+  <div class="sub-class">有任何问题请以下方式联系我们哦！</div>
+</div>
+<div class="subpage">
+  <div class='pb'>
+    <div class='pagebox'>
+      {dede:field.content/}
+      <div align='center'></div>
+    </div>
+  </div>
+  <div id="allmap"></div>
+</div>
+<script type="text/javascript">
+		$(function(){
+			var map = new BMap.Map("allmap");
+			map.centerAndZoom(new BMap.Point(123.43419945207, 41.768968603548), 18);
+			var marker1 = new BMap.Marker(new BMap.Point(123.43419945207,41.768968603548));  // 创建标注
+			map.addOverlay(marker1);              // 将标注添加到地图中
+			//marker1.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画				
+			//创建信息窗口
+			var infoWindow1 = new BMap.InfoWindow("寻模板");
+			marker1.openInfoWindow(infoWindow1);
+			//marker1.addEventListener("click", function(){this.openInfoWindow(infoWindow1);});				
+		}) 
+		</script>
+{dede:include filename="footer.htm"/}
+</div>
+</div>
+</div>
+</body>
+</html>
